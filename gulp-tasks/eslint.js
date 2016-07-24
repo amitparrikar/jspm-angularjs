@@ -9,9 +9,10 @@ var gulp = require('gulp'),
 gulp.task('eslint', function () {
     return gulp.src([
         '**/*.js',
+        '!client/config.js',
         '!client/jspm_packages{,/**}',
         '!node_modules{,/**}',
-        '!client/config.js'
+        '!client/modules/html_templates{,/**}'
     ])
     .pipe(eslint())
     .pipe(eslint.format());
