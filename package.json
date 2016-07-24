@@ -4,13 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm install && jspm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Amit Parrikar",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.13.0",
     "express": "^4.14.0",
-    "jspm": "^0.16.39"
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.1.0",
+    "jspm": "^0.16.39",
+    "wrench": "^1.5.9"
   },
   "jspm": {
     "directories": {
