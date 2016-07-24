@@ -10,7 +10,8 @@ var browserSync = require('browser-sync').create(),
 
 gulp.task('serve', ['browser-sync'], function () {
     gulp.watch('client/**/*.js').on('change', reload);
-    gulp.watch('**/*.css').on('change', reload);
+    gulp.watch('client/style.css').on('change', reload);
+    gulp.watch('client/**/*.less', ['less']);
     gulp.watch('**/*.tpl.html').on('change', reload);
 });
 
@@ -22,7 +23,7 @@ gulp.task('browser-sync', ['nodemon'], function () {
     });
 });
 
-gulp.task('nodemon', ['eslint'], function (done) {
+gulp.task('nodemon', ['eslint', 'less'], function (done) {
     var running = false;
 
     return nodemon({

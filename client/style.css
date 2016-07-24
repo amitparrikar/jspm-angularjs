@@ -1,3 +1,1 @@
-body{
-    background: #ccc;
-}
+#myApp #myApp body,#myApp body{background:#ccc}#myApp body{color:#00c}
