@@ -22,7 +22,7 @@ gulp.task('browser-sync', ['nodemon'], function () {
     });
 });
 
-gulp.task('nodemon', [], function (done) {
+gulp.task('nodemon', ['eslint'], function (done) {
     var running = false;
 
     return nodemon({
