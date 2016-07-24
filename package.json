@@ -15,8 +15,12 @@
     "express": "^4.14.0",
     "gulp": "^3.9.1",
     "gulp-eslint": "^3.0.1",
+    "gulp-inject": "^4.1.0",
+    "gulp-less": "^3.1.0",
     "gulp-nodemon": "^2.1.0",
     "jspm": "^0.16.39",
+    "less-plugin-autoprefix": "^1.5.1",
+    "less-plugin-clean-css": "^1.5.1",
     "wrench": "^1.5.9"
   },
   "jspm": {
