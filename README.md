@@ -1,0 +1,1 @@
+Boilerplate for AngularJS project with JSPM + ES6
